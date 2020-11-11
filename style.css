@@ -1,0 +1,296 @@
+*, *:before, *:after, html {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+html {
+    width: min-content;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(247, 247, 247);
+    margin: 8px;
+    display: block;
+    /*min-width: 290px;*/
+    
+}
+
+.container {
+    line-height: 1.6;
+   /*width: 100%;*/
+}
+
+header {
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    text-align: justify;
+   
+}
+
+
+h3 {
+    margin: 10px 0;
+}
+
+#navbar ul {
+    padding: 0;
+   
+}
+
+#navbar a:hover {
+    color: rgb(92, 92, 92);
+}
+
+
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+}
+
+#navbar li {
+    border-top: 1px solid #000;
+    position: relative;
+}
+
+#navbar header {
+    padding:20px;
+    text-align: center;
+}
+
+#navbar {
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgb(244, 244, 244);
+    border-right: 1px solid #000;
+    min-width: 290px;
+    height: 100%;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+#main-doc {
+   /*width: 100%;*/
+   position: absolute;
+   margin-left: 310px;
+   margin-bottom: 110px;
+   /*padding: 20px;*/
+   overflow: scroll;
+   z-index: 10;
+   
+}
+
+main {
+    display: block;
+    overflow-y: scroll;
+}
+
+code {
+    background-color: #eee;
+    white-space: pre;
+    display: inline-block;
+    width: min-content;
+    position: relative;
+    text-align: left;
+    padding: 15px;
+    margin: 10px 0;
+    word-break: normal;
+    word-wrap: normal;
+    
+}
+
+.list-of-attributs {
+    display: inline-block;
+}
+
+.css-symbol, .symbol{
+    padding: 0;
+    margin: 0;
+}
+
+.css-string{
+    background-color: #eee;
+    display: inline-block;
+    width: min-content;
+    padding: 3px;
+    box-shadow: 1px 1px 2px rgb(128, 128, 128);
+    margin:2px;
+  
+
+}
+
+pre {
+    display: block;
+    margin: 0;
+    word-wrap: break-word; 
+    max-width: min-content;
+    white-space: pre-wrap;                /* CSS3 browsers  */
+    white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+    white-space: -pre-wrap;                /* Opera 4 thru 6 */
+    white-space: -o-pre-wrap;              /* Opera 7 and up */
+    white-space: pre;
+    tab-size: 2;
+    /*overflow: auto;*/
+}
+
+code.css-note-long {
+    white-space: pre;
+    max-width: 600px;  
+    display: block;
+    
+}
+
+section {
+   /* margin: 15px;*/
+   max-width: max-content;
+   padding-right: 25px;
+   padding-left: 10px;
+   word-break: break-all;
+   -webkit-hyphens: auto;
+   -ms-hyphens: auto;
+   hyphens: auto;
+}
+
+img {
+    max-width: 40%;
+}
+
+.css-note {
+    border-left: solid;
+    background-color: #ffe8d4;
+    border-left-color: #f69d3c;
+    border-left-width: 5px;
+    padding: 5px;
+    margin: 20px 0px;
+    text-align: justify;
+}
+
+.list-marge-between-strings li {
+    margin-bottom: 5px;
+}
+ img {
+     display: block;
+     margin: 0 auto;
+     padding: 10px 0;
+ }
+ p {
+     text-align: justify;
+ }
+
+
+ @media only screen and (max-width:1200px) {
+    #navbar {
+        min-width: 250px;
+        font-size: 14px;
+    }
+
+    #main-doc {
+        width: 100vw;
+        
+        margin-left: 270px;
+    }
+
+    header {
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+    #logo {
+        font-size: 1.6em;
+    }
+
+    ul a {
+        font-size: 16px;
+    }
+
+    p {
+     font-size: 0.9em;
+    }
+
+    img {
+        margin: 0; 
+        max-width: 35%;
+    }
+
+    section {
+        padding: 10px 10px;
+        
+    }
+
+    code {
+        font-size: 0.8em;
+    }
+    
+ }
+
+ @media only screen and (max-width:900px) {
+    #navbar{
+        position: absolute;
+        top:0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 270px;
+        z-index: 1;
+        
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 270px;
+    }
+    header#logo {
+        font-size: 1.6em;
+        font-weight: 700;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    #Introduction{
+        margin-top: 40px;
+    }
+
+    #navbar li:last-child {
+        border-bottom: 2px solid;
+        
+    }
+
+    ul a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    p {
+        font-size: 0.9em;
+       }
+
+    header {
+        font-weight: 600;
+        font-size: 0.9em;
+    }
+
+    img {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
+    .navlink:last-child {
+        border-right: 1px solid #000;
+    }
+ } 
